@@ -2,6 +2,7 @@ package model
 
 import (
 	"errors"
+	. "github.com/samber/mo"
 	"time"
 )
 
@@ -21,6 +22,6 @@ type Shortening struct {
 
 type ShortenInput struct {
 	RawURL     string
-	Identifier string
+	Identifier Option[string]
 	CreatedBy  string
 }
